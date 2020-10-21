@@ -1,0 +1,32 @@
+.simpleForm form {
+  max-width: 500px;
+  margin: auto;
+  background:#fefefd;
+  box-shadow: 0 10px 10px #222;
+}
+.simpleForm form legend {
+
+     max-width: 400px;
+  margin: auto;
+    background-color: #85c1e9;
+    border-top: 0 none;
+    color: white;
+    display: table-cell;
+    padding: 10px 20px;
+    width: 100%;
+}
+.simpleForm input[type="submit"] {
+  background: #85c1e9;
+  color: white;
+  border: 0;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 5%;
+  border: thin #85c1e9 solid;
+}
+.simpleForm input[type="submit"]:focus,
+.simpleForm input[type="submit"]:hover, 
+.simpleForm input[type="submit"]:active {
+  background:black;
+  outline: none;
+}
