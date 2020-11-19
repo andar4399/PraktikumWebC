@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Kalkulator</title>
+ <style type="text/css">
+  .tombol{
+   background-color: gray;
+  }
+  .tabel{
+   background-color: skyblue;
+   margin: 10px;
+   padding: 10px;
+  }
+  .kal{
+    margin-top: 20px;
+    margin-left: 500px;
+  }
+ </style>
+</head>
+
+<body>
+
+<div class="kal">
+  <form name="calculator">
+    <table class="tabel" align="center">
+    <tr>
+      <td align="center"><b>KALKULATOR</b></td>
+    </tr>
+
+    <tr>
+      <td align="center"><input type="number" name="angka1" placeholder="Ketik angka 1"></td>
+    </tr>
+
+    <tr>
+      <td align="center"><input type="number" name="angka2" placeholder="Ketik angka 2"></td>
+    </tr>
+
+    <tr>
+      <td colspan="3" align="center">
+        <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+        <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+        <input class="tombol" type="button" onclick="kali()" value="  *  ">
+        <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+      </td>
+    </tr>
+
+   <tr>
+      <td>Hasil :</td>
+   </tr>
+
+    <tr>
+      <td align="center"><input type="number" name="hasil"></td>
+    </tr>
+
+    </table>
+  </form>
+</div>  
+
+</body>
+</html>
+<script type="text/javascript">
+
+function tambah(){
+ var angka1=parseFloat(document.calculator.angka1.value);
+ var angka2=parseFloat(document.calculator.angka2.value);
+ var hasil= angka1+angka2;
+ document.calculator.hasil.value=hasil;
+}
+function kurang(){
+ var angka1=parseFloat(document.calculator.angka1.value);
+ var angka2=parseFloat(document.calculator.angka2.value);
+ var hasil= angka1-angka2;
+ document.calculator.hasil.value=hasil;
+}
+function kali(){
+ var angka1=parseFloat(document.calculator.angka1.value);
+ var angka2=parseFloat(document.calculator.angka2.value);
+ var hasil= angka1*angka2;
+ document.calculator.hasil.value=hasil;
+}
+function bagi(){
+ var angka1=parseFloat(document.calculator.angka1.value);
+ var angka2=parseFloat(document.calculator.angka2.value);
+ var hasil= angka1/angka2;
+ document.calculator.hasil.value=hasil;
+}
+</script>
